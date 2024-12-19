@@ -5,4 +5,5 @@ class AppColors {
   static const lightTabButtonColor = Color(0xff666666);
   static const background = Color(0xfff8f8f8);
   static const appWhite = Color(0xffffffff);
+  static const hintTextCollor = Color(0xffD2D2D2);
 }

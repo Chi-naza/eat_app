@@ -1,8 +1,10 @@
 // import 'package:device_preview/device_preview.dart';
 import 'package:eat_app/constants/app_colors.dart';
 import 'package:eat_app/screens/dashboard_screen.dart';
+import 'package:eat_app/screens/main_screen.dart';
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Eat App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -29,7 +31,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
-      home: const EatDashboardScreen(),
+      home: const MainScreen(),
+      // home: const EatDashboardScreen(),
     );
   }
 }
